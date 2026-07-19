@@ -67,3 +67,4 @@ plt.title('Mediana do comprimento da sépala por espécie')
 sns.barplot(data=df_grupo, y=df_grupo.index, x='sepal_length', palette='Set2')
 plt.title('Mediana do comprimento da sépala por espécie')
 plt.show()
+# %%
