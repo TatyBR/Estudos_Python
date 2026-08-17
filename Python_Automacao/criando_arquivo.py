@@ -6,11 +6,11 @@ wb = Workbook()
 # Verificando as abas existentes
 print(wb.sheetnames)
 
-# Cria uma nova aba
-# wb.create_sheet("Minha_Planilha")
-
 # Selecionando a aba
 sheet = wb["Sheet"]
+
+# Modificando o nome da aba
+# sheet.title = "Primeira Planilha"
 
 # inserindo dados
 sheet["A1"].value = "Python"
