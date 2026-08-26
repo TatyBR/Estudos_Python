@@ -1,6 +1,6 @@
 from openpyxl import load_workbook
 
-wb = load_workbook("Lendo Excel.xlsx")
+wb = load_workbook("dados/Lendo Excel.xlsx")
 
 # Verificando as abas existentes
 print(wb.sheetnames)
@@ -58,4 +58,4 @@ dicionario
 
 
 # Salvando o arquivo com as alterações
-wb.save("Lendo Excel.xlsx")
+wb.save("dados/Lendo Excel.xlsx")

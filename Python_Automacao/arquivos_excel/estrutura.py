@@ -1,7 +1,7 @@
 from openpyxl import load_workbook
 
 # Carregando o Arquivo
-wb = load_workbook("Modificando estrutura.xlsx")
+wb = load_workbook("dados/Modificando estrutura.xlsx")
 
 # Verificando as abas existentes no arquivo
 print(wb.sheetnames)
@@ -38,4 +38,4 @@ sheet.delete_rows(3)
 sheet.delete_cols(2)
 
 # Salvando o arquivo
-wb.save("Modificando estrutura.xlsx")
+wb.save("dados/Modificando estrutura.xlsx")

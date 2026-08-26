@@ -26,5 +26,5 @@ sheet.cell(2, 2).value = "Automação no Python"
 sheet["A2"].value = None
 sheet.cell(2, 2).value = None
 
-wb.save('comandos_basicos.xlsx')
+wb.save('dados/comandos_basicos.xlsx')
 
