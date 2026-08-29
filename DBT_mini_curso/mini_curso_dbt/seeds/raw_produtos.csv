@@ -1,0 +1,11 @@
+produto_id,nome,categoria,preco,estoque,ativo
+1,Notebook Pro 15,Eletrônicos,3499.99,50,true
+2,Mouse Sem Fio,Periféricos,89.90,200,true
+3,Teclado Mecânico,Periféricos,299.90,150,true
+4,Monitor 27",Eletrônicos,1299.90,30,true
+5,Headset Gamer,Periféricos,349.90,80,true
+6,Webcam HD,Periféricos,199.90,60,true
+7,HD Externo 1TB,Armazenamento,299.90,40,true
+8,Pendrive 64GB,Armazenamento,49.90,500,true
+9,Cabo HDMI 2m,Acessórios,29.90,300,true
+10,Suporte Notebook,Acessórios,149.90,100,true

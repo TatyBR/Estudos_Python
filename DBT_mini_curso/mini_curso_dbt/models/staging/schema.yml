@@ -1,0 +1,202 @@
+version: 2
+
+models:
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # stg_clientes
+  # ───────────────────────────────────────────────────────────────────────────
+  - name: stg_clientes
+    description: >
+      Clientes limpos e padronizados a partir de raw_clientes.
+      Strings com trim e normalização de capitalização, datas tipadas como DATE,
+      booleanos convertidos e campos derivados de ano/mês adicionados.
+      Materializado como VIEW — reflete sempre o estado atual da fonte.
+    columns:
+      - name: cliente_id
+        description: "Chave primária do cliente, herdada da fonte sem alteração."
+        tests:
+          - not_null
+          - unique
+
+      - name: nome_cliente
+        description: "Nome completo do cliente com espaços extras removidos (trim). Capitalização preservada."
+        tests:
+          - not_null
+
+      - name: email
+        description: "E-mail do cliente em minúsculas e sem espaços (lower + trim). Utilizado como identificador alternativo."
+        tests:
+          - not_null
+          - unique
+
+      - name: cidade
+        description: "Cidade de residência do cliente com espaços extras removidos."
+        tests:
+          - not_null
+
+      - name: estado
+        description: "Sigla do estado (UF) em maiúsculas e sem espaços. Sempre dois caracteres alfabéticos."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA',
+                       'MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN',
+                       'RS','RO','RR','SC','SP','SE','TO']
+
+      - name: data_cadastro
+        description: "Data de cadastro do cliente tipada como DATE (YYYY-MM-DD)."
+        tests:
+          - not_null
+
+      - name: ativo
+        description: "Indica se o cliente está ativo na plataforma. Convertido para BOOLEAN (true/false)."
+        tests:
+          - not_null
+
+      # - name: ano_cadastro
+        # description: "Ano extraído de data_cadastro. Útil para análises de coorte e sazonalidade de aquisição."
+        # tests:
+           # - not_null
+
+      # - name: mes_cadastro
+        # description: "Mês extraído de data_cadastro (1–12). Útil para análises de sazonalidade de aquisição."
+        # tests:
+          # - not_null
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # stg_produtos
+  # ───────────────────────────────────────────────────────────────────────────
+  - name: stg_produtos
+    description: >
+      Produtos limpos e padronizados a partir de raw_produtos.
+      Strings com trim, numéricos com cast explícito e faixa de preço calculada.
+      Materializado como VIEW — reflete sempre o catálogo atual.
+    columns:
+      - name: produto_id
+        description: "Chave primária do produto, herdada da fonte sem alteração."
+        tests:
+          - not_null
+          - unique
+
+      - name: nome_produto
+        description: "Nome do produto com espaços extras removidos (trim). Renomeado de 'nome' para maior clareza."
+        tests:
+          - not_null
+
+      - name: categoria
+        description: "Categoria do produto com espaços extras removidos: Eletrônicos, Periféricos, Armazenamento ou Acessórios."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Eletrônicos', 'Periféricos', 'Armazenamento', 'Acessórios']
+
+      - name: preco
+        description: "Preço atual de catálogo do produto em R$, tipado como NUMERIC(10,2) com duas casas decimais garantidas."
+        tests:
+          - not_null
+
+      - name: estoque
+        description: "Quantidade de unidades em estoque, convertida de texto para INTEGER."
+        tests:
+          - not_null
+
+      - name: ativo
+        description: "Indica se o produto está disponível para venda. Convertido para BOOLEAN (true/false)."
+        tests:
+          - not_null
+
+      - name: faixa_preco
+        description: >
+          Classificação do produto por faixa de preço, calculada a partir de raw_produtos.preco:
+          'baixo' (< R$ 100), 'medio' (R$ 100–499,99), 'alto' (R$ 500–1.499,99), 'premium' (≥ R$ 1.500).
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['baixo', 'medio', 'alto', 'premium']
+
+  # ───────────────────────────────────────────────────────────────────────────
+  # stg_pedidos
+  # ───────────────────────────────────────────────────────────────────────────
+  - name: stg_pedidos
+    description: >
+      Pedidos limpos e padronizados a partir de raw_pedidos.
+      Tipos corrigidos, valor_total calculado, flags booleanas adicionadas,
+      dias_para_entrega derivado e campos de ano/mês extraídos.
+      Materializado como VIEW — reflete sempre o estado atual dos pedidos.
+    columns:
+      - name: pedido_id
+        description: "Chave primária do pedido, herdada da fonte sem alteração."
+        tests:
+          - not_null
+          - unique
+
+      - name: cliente_id
+        description: "Chave estrangeira para stg_clientes. Garante que todo pedido pertence a um cliente válido."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_clientes')
+              field: cliente_id
+
+      - name: produto_id
+        description: "Chave estrangeira para stg_produtos. Garante que todo pedido referencia um produto válido."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_produtos')
+              field: produto_id
+
+      - name: quantidade
+        description: "Quantidade de unidades do produto no pedido, convertida de texto para INTEGER."
+        tests:
+          - not_null
+
+      - name: preco_unitario
+        description: "Preço por unidade cobrado no momento do pedido (em R$), tipado como NUMERIC(10,2). Valor histórico — não reflete preço atual do catálogo."
+        tests:
+          - not_null
+
+      - name: valor_total
+        description: "Valor total do pedido calculado como quantidade × preco_unitario, tipado como NUMERIC(10,2)."
+        tests:
+          - not_null
+
+      - name: status
+        description: "Status do pedido em minúsculas e sem espaços: 'entregue', 'em_transito' ou 'cancelado'."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['entregue', 'em_transito', 'cancelado']
+
+      - name: is_cancelado
+        description: "Flag BOOLEAN: true se status = 'cancelado', false caso contrário. Facilita filtros nos marts."
+        tests:
+          - not_null
+
+      - name: is_entregue
+        description: "Flag BOOLEAN: true se status = 'entregue', false caso contrário. Facilita filtros nos marts."
+        tests:
+          - not_null
+
+      - name: data_pedido
+        description: "Data em que o pedido foi realizado, tipada como DATE."
+        tests:
+          - not_null
+
+      - name: data_entrega
+        description: "Data de entrega do pedido, tipada como DATE. Nula para pedidos em trânsito ou cancelados."
+
+      - name: dias_para_entrega
+        description: >
+          Dias corridos entre data_pedido e data_entrega (data_entrega − data_pedido).
+          Nulo quando o pedido ainda não foi entregue. Usado para calcular media_dias_entrega nos marts.
+
+      - name: ano_pedido
+        description: "Ano extraído de data_pedido. Usado para análises de tendência anual de vendas."
+        tests:
+          - not_null
+
+      - name: mes_pedido
+        description: "Mês extraído de data_pedido (1–12). Usado para análises de sazonalidade mensal de vendas."
+        tests:
+          - not_null

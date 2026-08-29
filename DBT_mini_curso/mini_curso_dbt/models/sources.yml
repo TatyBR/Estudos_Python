@@ -1,0 +1,12 @@
+# modeles/source.yml
+
+# hierarquia!!!
+version: 1
+
+sources:
+  - name: raw       # dados brutos
+    schema: public  # "pastas" que estão no BD
+    tables:         # definindo as fontes
+      - name: raw_clientes
+      - name: raw_pedidos
+      - name: raw_produtos

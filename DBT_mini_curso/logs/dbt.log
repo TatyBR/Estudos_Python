@@ -1,0 +1,336 @@
+[0m23:11:12.394146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175E6A5DFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175E4334B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175E9387C50>]}
+
+
+============================== 23:11:12.399300 | 2e40b837-654c-4fa7-a70e-3b1cb8605454 ==============================
+[0m23:11:12.399300 [info ] [MainThread]: Running with dbt=1.12.3
+[0m23:11:12.399822 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tayta\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init mini_curso_dbt', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m23:11:12.426116 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\tayta\.dbt
+[0m23:11:12.428158 [debug] [MainThread]: Starter project path: C:\Users\tayta\anaconda3\envs\dbt_ambiente\Lib\site-packages\dbt\include\starter_project
+[0m23:11:12.472215 [info ] [MainThread]: Setting up your profile.
+[0m23:11:59.213401 [info ] [MainThread]: Profile mini_curso_dbt written to C:\Users\tayta\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m23:11:59.219841 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m23:11:59.220579 [info ] [MainThread]: dbt version: 1.12.3
+[0m23:11:59.221142 [info ] [MainThread]: python version: 3.14.7
+[0m23:11:59.221542 [info ] [MainThread]: python path: C:\Users\tayta\anaconda3\envs\dbt_ambiente\python.exe
+[0m23:11:59.222171 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:11:59.309066 [info ] [MainThread]: Using profiles dir at C:\Users\tayta\.dbt
+[0m23:11:59.309659 [info ] [MainThread]: Using profiles.yml file at C:\Users\tayta\.dbt\profiles.yml
+[0m23:11:59.310049 [info ] [MainThread]: Using dbt_project.yml file at C:\Taita Geral\1. CURSOS\Estudos_Python\DBT\mini_curso_dbt\dbt_project.yml
+[0m23:11:59.311043 [info ] [MainThread]: adapter type: postgres
+[0m23:11:59.311374 [info ] [MainThread]: adapter version: 1.11.0
+[0m23:11:59.393444 [info ] [MainThread]: Configuration:
+[0m23:11:59.393923 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:11:59.394230 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:11:59.394540 [info ] [MainThread]: Required dependencies:
+[0m23:11:59.394790 [debug] [MainThread]: Executing "git --help"
+[0m23:11:59.442675 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:11:59.443067 [debug] [MainThread]: STDERR: "b''"
+[0m23:11:59.443353 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:11:59.443662 [info ] [MainThread]: Connection:
+[0m23:11:59.443947 [info ] [MainThread]:   host: localhost
+[0m23:11:59.444197 [info ] [MainThread]:   port: 5432
+[0m23:11:59.444426 [info ] [MainThread]:   user: postgres
+[0m23:11:59.444630 [info ] [MainThread]:   database: vendas_db
+[0m23:11:59.444819 [info ] [MainThread]:   schema: public
+[0m23:11:59.445083 [info ] [MainThread]:   connect_timeout: 10
+[0m23:11:59.445410 [info ] [MainThread]:   role: None
+[0m23:11:59.445817 [info ] [MainThread]:   search_path: None
+[0m23:11:59.446225 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:11:59.446561 [info ] [MainThread]:   sslmode: None
+[0m23:11:59.446935 [info ] [MainThread]:   sslcert: None
+[0m23:11:59.447279 [info ] [MainThread]:   sslkey: None
+[0m23:11:59.447654 [info ] [MainThread]:   sslrootcert: None
+[0m23:11:59.448023 [info ] [MainThread]:   application_name: dbt
+[0m23:11:59.448456 [info ] [MainThread]:   autocommit: False
+[0m23:11:59.448877 [info ] [MainThread]:   retries: 1
+[0m23:11:59.449757 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m23:11:59.660433 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:11:59.969887 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:11:59.970168 [debug] [MainThread]: On debug: select 1 as id
+[0m23:11:59.970354 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:12:00.286816 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m23:12:00.287256 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m23:12:00.287598 [debug] [MainThread]: On debug: No close available on handle
+[0m23:12:00.287896 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m23:12:00.288406 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:12:00.288930 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  'utf-8' codec can't decode byte 0xe7 in position 78: invalid continuation byte
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:12:00.289569 [info ] [MainThread]: Your new dbt project "mini_curso_dbt" was created!
+Initialized new project in C:\Taita Geral\1. CURSOS\Estudos_Python\DBT\mini_curso_dbt\mini_curso_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:12:00.290147 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m23:12:00.291339 [debug] [MainThread]: Command `dbt init` succeeded at 23:12:00.291181 after 48.10 seconds
+[0m23:12:00.291699 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:12:00.292047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175E9437CE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175E978ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000175E91B6470>]}
+[0m23:12:00.292481 [debug] [MainThread]: Flushing usage events
+[0m23:12:01.330914 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:32:19.287522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8884CDFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B885DA4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B88ADF7C50>]}
+
+
+============================== 00:32:19.303496 | faf04d63-5a23-43d8-b196-e8ca5ac90fc4 ==============================
+[0m00:32:19.303496 [info ] [MainThread]: Running with dbt=1.12.3
+[0m00:32:19.308010 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tayta\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m00:32:19.371685 [info ] [MainThread]: dbt version: 1.12.3
+[0m00:32:19.372713 [info ] [MainThread]: python version: 3.14.7
+[0m00:32:19.373698 [info ] [MainThread]: python path: C:\Users\tayta\anaconda3\envs\dbt_ambiente\python.exe
+[0m00:32:19.374902 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m00:32:19.478534 [info ] [MainThread]: Using profiles dir at C:\Users\tayta\.dbt
+[0m00:32:19.479205 [info ] [MainThread]: Using profiles.yml file at C:\Users\tayta\.dbt\profiles.yml
+[0m00:32:19.479627 [info ] [MainThread]: Using dbt_project.yml file at C:\Taita Geral\1. CURSOS\Estudos_Python\DBT\dbt_project.yml
+[0m00:32:19.480728 [info ] [MainThread]: adapter type: postgres
+[0m00:32:19.481083 [info ] [MainThread]: adapter version: 1.11.0
+[0m00:32:19.481373 [info ] [MainThread]: Configuration:
+[0m00:32:19.481699 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:32:19.481980 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:32:19.482255 [info ] [MainThread]: Required dependencies:
+[0m00:32:19.482556 [debug] [MainThread]: Executing "git --help"
+[0m00:32:19.538213 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:32:19.538915 [debug] [MainThread]: STDERR: "b''"
+[0m00:32:19.539532 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:32:19.539957 [info ] [MainThread]: Connection:
+[0m00:32:19.540297 [info ] [MainThread]:   host: localhost
+[0m00:32:19.540562 [info ] [MainThread]:   port: 5432
+[0m00:32:19.540795 [info ] [MainThread]:   user: postgres
+[0m00:32:19.541300 [info ] [MainThread]:   database: vendas_db
+[0m00:32:19.541851 [info ] [MainThread]:   schema: public
+[0m00:32:19.542574 [info ] [MainThread]:   connect_timeout: 10
+[0m00:32:19.543382 [info ] [MainThread]:   role: None
+[0m00:32:19.544025 [info ] [MainThread]:   search_path: None
+[0m00:32:19.544587 [info ] [MainThread]:   keepalives_idle: 0
+[0m00:32:19.545156 [info ] [MainThread]:   sslmode: None
+[0m00:32:19.545685 [info ] [MainThread]:   sslcert: None
+[0m00:32:19.546429 [info ] [MainThread]:   sslkey: None
+[0m00:32:19.547216 [info ] [MainThread]:   sslrootcert: None
+[0m00:32:19.547915 [info ] [MainThread]:   application_name: dbt
+[0m00:32:19.548629 [info ] [MainThread]:   autocommit: False
+[0m00:32:19.549235 [info ] [MainThread]:   retries: 1
+[0m00:32:19.550277 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m00:32:19.722974 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m00:32:20.135226 [debug] [MainThread]: Using postgres connection "debug"
+[0m00:32:20.136210 [debug] [MainThread]: On debug: select 1 as id
+[0m00:32:20.136964 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:32:20.223880 [debug] [MainThread]: SQL status: SELECT 1 in 0.087 seconds
+[0m00:32:20.224605 [debug] [MainThread]: On debug: Close
+[0m00:32:20.224908 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:32:20.225258 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:32:20.225613 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Taita Geral\1. CURSOS\Estudos_Python\DBT\dbt_project.yml> not found
+
+[0m00:32:20.226350 [debug] [MainThread]: Command `dbt debug` failed at 00:32:20.226249 after 1.22 seconds
+[0m00:32:20.226636 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:32:20.226917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B88B2803E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B88AF33AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B88AE8D6A0>]}
+[0m00:32:20.227237 [debug] [MainThread]: Flushing usage events
+[0m00:32:21.248072 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:33:41.195126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCE5D9DFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCE3674B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCE86C7C50>]}
+
+
+============================== 00:33:41.204911 | 614c6846-0bb4-4ba0-9f0d-856b9d344d06 ==============================
+[0m00:33:41.204911 [info ] [MainThread]: Running with dbt=1.12.3
+[0m00:33:41.205920 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tayta\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m00:33:41.246082 [info ] [MainThread]: dbt version: 1.12.3
+[0m00:33:41.247139 [info ] [MainThread]: python version: 3.14.7
+[0m00:33:41.247912 [info ] [MainThread]: python path: C:\Users\tayta\anaconda3\envs\dbt_ambiente\python.exe
+[0m00:33:41.248526 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m00:33:41.316080 [info ] [MainThread]: Using profiles dir at C:\Users\tayta\.dbt
+[0m00:33:41.316648 [info ] [MainThread]: Using profiles.yml file at C:\Users\tayta\.dbt\profiles.yml
+[0m00:33:41.317233 [info ] [MainThread]: Using dbt_project.yml file at C:\Taita Geral\1. CURSOS\Estudos_Python\DBT\dbt_project.yml
+[0m00:33:41.318146 [info ] [MainThread]: adapter type: postgres
+[0m00:33:41.318403 [info ] [MainThread]: adapter version: 1.11.0
+[0m00:33:41.318659 [info ] [MainThread]: Configuration:
+[0m00:33:41.318917 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:33:41.319205 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:33:41.319470 [info ] [MainThread]: Required dependencies:
+[0m00:33:41.319821 [debug] [MainThread]: Executing "git --help"
+[0m00:33:41.371892 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:33:41.372276 [debug] [MainThread]: STDERR: "b''"
+[0m00:33:41.372560 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:33:41.372925 [info ] [MainThread]: Connection:
+[0m00:33:41.373251 [info ] [MainThread]:   host: localhost
+[0m00:33:41.373535 [info ] [MainThread]:   port: 5432
+[0m00:33:41.373824 [info ] [MainThread]:   user: postgres
+[0m00:33:41.374100 [info ] [MainThread]:   database: vendas_dbdbt
+[0m00:33:41.374400 [info ] [MainThread]:   schema: public
+[0m00:33:41.374617 [info ] [MainThread]:   connect_timeout: 10
+[0m00:33:41.374852 [info ] [MainThread]:   role: None
+[0m00:33:41.375095 [info ] [MainThread]:   search_path: None
+[0m00:33:41.375328 [info ] [MainThread]:   keepalives_idle: 0
+[0m00:33:41.375559 [info ] [MainThread]:   sslmode: None
+[0m00:33:41.375783 [info ] [MainThread]:   sslcert: None
+[0m00:33:41.376001 [info ] [MainThread]:   sslkey: None
+[0m00:33:41.376217 [info ] [MainThread]:   sslrootcert: None
+[0m00:33:41.376434 [info ] [MainThread]:   application_name: dbt
+[0m00:33:41.376656 [info ] [MainThread]:   autocommit: False
+[0m00:33:41.376967 [info ] [MainThread]:   retries: 1
+[0m00:33:41.377379 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m00:33:41.534977 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m00:33:41.883372 [debug] [MainThread]: Using postgres connection "debug"
+[0m00:33:41.883689 [debug] [MainThread]: On debug: select 1 as id
+[0m00:33:41.883878 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:33:41.952096 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m00:33:41.952405 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m00:33:41.952645 [debug] [MainThread]: On debug: No close available on handle
+[0m00:33:41.952853 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m00:33:41.953239 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:33:41.953558 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Taita Geral\1. CURSOS\Estudos_Python\DBT\dbt_project.yml> not found
+
+[0m00:33:41.953816 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  'utf-8' codec can't decode byte 0xe3 in position 100: invalid continuation byte
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m00:33:41.954470 [debug] [MainThread]: Command `dbt debug` failed at 00:33:41.954377 after 0.97 seconds
+[0m00:33:41.954782 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:33:41.955130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCE8A5C3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCE8803AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCE875D6A0>]}
+[0m00:33:41.955517 [debug] [MainThread]: Flushing usage events
+[0m00:33:42.640444 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:21:57.280624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9282CDFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C925BA4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C92AC7B9D0>]}
+
+
+============================== 16:21:57.290979 | 01eda7c3-6a18-4bfd-8c7e-675fcb95c7a2 ==============================
+[0m16:21:57.290979 [info ] [MainThread]: Running with dbt=1.12.3
+[0m16:21:57.291677 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tayta\\.dbt', 'invocation_command': 'dbt run --select staging', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m16:21:57.292151 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Taita Geral\1. CURSOS\Estudos_Python\DBT\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:21:57.293228 [debug] [MainThread]: Command `dbt run` failed at 16:21:57.292887 after 0.21 seconds
+[0m16:21:57.293993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C92ABE1A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C92AC0A7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C92AC6BCE0>]}
+[0m16:21:57.294568 [debug] [MainThread]: Flushing usage events
+[0m16:21:57.953445 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:24:58.136385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220E35FDFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220E0ED0B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220E5F27C50>]}
+
+
+============================== 22:24:58.144702 | 62230738-32a4-4aec-aa0e-91f4405aa501 ==============================
+[0m22:24:58.144702 [info ] [MainThread]: Running with dbt=1.12.3
+[0m22:24:58.145409 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tayta\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt clean', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m22:24:58.146385 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Taita Geral\1. CURSOS\Estudos_Python\DBT\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:24:58.147443 [debug] [MainThread]: Command `dbt clean` failed at 22:24:58.147308 after 0.25 seconds
+[0m22:24:58.147791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220E5FE4050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220E5D629F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220E5F56580>]}
+[0m22:24:58.148167 [debug] [MainThread]: Flushing usage events
+[0m22:24:59.489150 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:12:00.252979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C27BE4DFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C279714B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C27E7FB9D0>]}
+
+
+============================== 22:12:00.263802 | bdcf2d52-c32d-4d0d-a962-14619ce0e389 ==============================
+[0m22:12:00.263802 [info ] [MainThread]: Running with dbt=1.12.3
+[0m22:12:00.264757 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tayta\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select mart', 'log_path': 'logs'}
+[0m22:12:00.265178 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Taita Geral\1. CURSOS\Estudos_Python\DBT\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:12:00.266037 [debug] [MainThread]: Command `dbt run` failed at 22:12:00.265946 after 0.24 seconds
+[0m22:12:00.266275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C27E761A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C27E78A7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C27E7EBCE0>]}
+[0m22:12:00.266511 [debug] [MainThread]: Flushing usage events
+[0m22:12:01.274038 [debug] [MainThread]: An error was encountered while trying to flush usage events
+{"data":{"log_version":3,"version":"=2.0.0-preview.212"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a04b6e-2961-74c1-83b2-1b7709abc00d","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.212","name":"MainReportVersion","pid":26528,"thread":"tokio-rt-worker","ts":"2026-08-29T02:51:45.899806Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\tayta\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a04b6e-2961-74c1-83b2-1b7709abc00d","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":26528,"thread":"tokio-rt-worker","ts":"2026-08-29T02:51:45.899862Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a04b6e-2961-74c1-83b2-1b7709abc00d","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":26528,"thread":"tokio-rt-worker","ts":"2026-08-29T02:51:45.916175Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a04b6e-2961-74c1-83b2-1b7709abc00d","level":"debug","msg":"Requesting trial license from https://cloud.getdbt.com/api/private/trial-licenses/","name":"Generic","pid":26528,"thread":"main","ts":"2026-08-29T02:51:48.070641Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a04b6e-2961-74c1-83b2-1b7709abc00d","level":"debug","msg":"Trial license retrieved","name":"Generic","pid":26528,"thread":"main","ts":"2026-08-29T02:51:48.562189Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a04b6e-2961-74c1-83b2-1b7709abc00d","level":"debug","msg":"License loaded from trial license server","name":"Generic","pid":26528,"thread":"tokio-rt-worker","ts":"2026-08-29T02:51:50.393252Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"valid\",\n  \"licensing_enabled\": true,\n  \"features\": [\n    \"compare\",\n    \"strict-static-analysis\"\n  ],\n  \"issued_at\": \"2026-08-29T02:51:52+00:00\",\n  \"expires_at\": \"2026-09-12T02:50:56+00:00\",\n  \"license_type\": \"trial\",\n  \"machine_id\": \"b30df044d3cab8407643c83ce2f62d937742cb38a2771ed80d7054f58b34bc57\",\n  \"days_remaining\": 13,\n  \"trial_start_date\": \"2026-08-29T02:50:56+00:00\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a04b6e-2961-74c1-83b2-1b7709abc00d","level":"info","msg":"{\n  \"status\": \"valid\",\n  \"licensing_enabled\": true,\n  \"features\": [\n    \"compare\",\n    \"strict-static-analysis\"\n  ],\n  \"issued_at\": \"2026-08-29T02:51:52+00:00\",\n  \"expires_at\": \"2026-09-12T02:50:56+00:00\",\n  \"license_type\": \"trial\",\n  \"machine_id\": \"b30df044d3cab8407643c83ce2f62d937742cb38a2771ed80d7054f58b34bc57\",\n  \"days_remaining\": 13,\n  \"trial_start_date\": \"2026-08-29T02:50:56+00:00\"\n}","name":"ShowNode","pid":26528,"thread":"tokio-rt-worker","ts":"2026-08-29T02:51:51.183553Z"}}
+{"data":{"completed_at":"2026-08-29T02:51:51.363912Z","elapsed":5.464354515075684,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a04b6e-2961-74c1-83b2-1b7709abc00d","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [5.5s]","name":"CommandCompleted","pid":26528,"thread":"tokio-rt-worker","ts":"2026-08-29T02:51:51.364997Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.212"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a04b6f-80c4-73e0-99e6-59a92624399f","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.212","name":"MainReportVersion","pid":37184,"thread":"tokio-rt-worker","ts":"2026-08-29T02:53:13.820840Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\tayta\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a04b6f-80c4-73e0-99e6-59a92624399f","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":37184,"thread":"tokio-rt-worker","ts":"2026-08-29T02:53:13.821091Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a04b6f-80c4-73e0-99e6-59a92624399f","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":37184,"thread":"tokio-rt-worker","ts":"2026-08-29T02:53:13.840242Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a04b6f-80c4-73e0-99e6-59a92624399f","level":"debug","msg":"License loaded from file C:\\Users\\tayta\\.dbt\\license.trial","name":"Generic","pid":37184,"thread":"tokio-rt-worker","ts":"2026-08-29T02:53:15.234949Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"valid\",\n  \"licensing_enabled\": true,\n  \"features\": [\n    \"compare\",\n    \"strict-static-analysis\"\n  ],\n  \"issued_at\": \"2026-08-29T02:51:52+00:00\",\n  \"expires_at\": \"2026-09-12T02:50:56+00:00\",\n  \"license_type\": \"trial\",\n  \"machine_id\": \"b30df044d3cab8407643c83ce2f62d937742cb38a2771ed80d7054f58b34bc57\",\n  \"days_remaining\": 13,\n  \"trial_start_date\": \"2026-08-29T02:50:56+00:00\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a04b6f-80c4-73e0-99e6-59a92624399f","level":"info","msg":"{\n  \"status\": \"valid\",\n  \"licensing_enabled\": true,\n  \"features\": [\n    \"compare\",\n    \"strict-static-analysis\"\n  ],\n  \"issued_at\": \"2026-08-29T02:51:52+00:00\",\n  \"expires_at\": \"2026-09-12T02:50:56+00:00\",\n  \"license_type\": \"trial\",\n  \"machine_id\": \"b30df044d3cab8407643c83ce2f62d937742cb38a2771ed80d7054f58b34bc57\",\n  \"days_remaining\": 13,\n  \"trial_start_date\": \"2026-08-29T02:50:56+00:00\"\n}","name":"ShowNode","pid":37184,"thread":"tokio-rt-worker","ts":"2026-08-29T02:53:15.994125Z"}}
+{"data":{"completed_at":"2026-08-29T02:53:16.153738Z","elapsed":2.334622859954834,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a04b6f-80c4-73e0-99e6-59a92624399f","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [2.3s]","name":"CommandCompleted","pid":37184,"thread":"tokio-rt-worker","ts":"2026-08-29T02:53:16.154706Z"}}
+[0m00:07:42.433123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ECC96DFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ECA230B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ECF297C50>]}
+
+
+============================== 00:07:42.438442 | 45c2f5d1-7389-4192-a9a7-dc999b32d040 ==============================
+[0m00:07:42.438442 [info ] [MainThread]: Running with dbt=1.12.3
+[0m00:07:42.439000 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\tayta\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m00:07:42.470788 [info ] [MainThread]: dbt version: 1.12.3
+[0m00:07:42.471240 [info ] [MainThread]: python version: 3.14.7
+[0m00:07:42.471551 [info ] [MainThread]: python path: C:\Users\tayta\anaconda3\envs\dbt_ambiente\python.exe
+[0m00:07:42.471789 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m00:07:42.533146 [info ] [MainThread]: Using profiles dir at C:\Users\tayta\.dbt
+[0m00:07:42.533674 [info ] [MainThread]: Using profiles.yml file at C:\Users\tayta\.dbt\profiles.yml
+[0m00:07:42.534004 [info ] [MainThread]: Using dbt_project.yml file at C:\Taita Geral\1. CURSOS\Estudos_Python\DBT_mini_curso\dbt_project.yml
+[0m00:07:42.535186 [info ] [MainThread]: adapter type: postgres
+[0m00:07:42.535447 [info ] [MainThread]: adapter version: 1.11.0
+[0m00:07:42.535763 [info ] [MainThread]: Configuration:
+[0m00:07:42.536068 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:07:42.536380 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:07:42.536635 [info ] [MainThread]: Required dependencies:
+[0m00:07:42.536952 [debug] [MainThread]: Executing "git --help"
+[0m00:07:42.701064 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:07:42.701422 [debug] [MainThread]: STDERR: "b''"
+[0m00:07:42.701743 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:07:42.702126 [info ] [MainThread]: Connection:
+[0m00:07:42.702723 [info ] [MainThread]:   host: localhost
+[0m00:07:42.703630 [info ] [MainThread]:   port: 5432
+[0m00:07:42.704824 [info ] [MainThread]:   user: postgres
+[0m00:07:42.705380 [info ] [MainThread]:   database: vendas_db
+[0m00:07:42.705643 [info ] [MainThread]:   schema: public
+[0m00:07:42.705897 [info ] [MainThread]:   connect_timeout: 10
+[0m00:07:42.706146 [info ] [MainThread]:   role: None
+[0m00:07:42.706407 [info ] [MainThread]:   search_path: None
+[0m00:07:42.706634 [info ] [MainThread]:   keepalives_idle: 0
+[0m00:07:42.706888 [info ] [MainThread]:   sslmode: None
+[0m00:07:42.707141 [info ] [MainThread]:   sslcert: None
+[0m00:07:42.707404 [info ] [MainThread]:   sslkey: None
+[0m00:07:42.707655 [info ] [MainThread]:   sslrootcert: None
+[0m00:07:42.707906 [info ] [MainThread]:   application_name: dbt
+[0m00:07:42.708189 [info ] [MainThread]:   autocommit: False
+[0m00:07:42.708450 [info ] [MainThread]:   retries: 1
+[0m00:07:42.708930 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m00:07:42.882353 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m00:07:43.227696 [debug] [MainThread]: Using postgres connection "debug"
+[0m00:07:43.227990 [debug] [MainThread]: On debug: select 1 as id
+[0m00:07:43.228205 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:07:43.374327 [debug] [MainThread]: SQL status: SELECT 1 in 0.146 seconds
+[0m00:07:43.376377 [debug] [MainThread]: On debug: Close
+[0m00:07:43.377339 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:07:43.378283 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:07:43.378801 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Taita Geral\1. CURSOS\Estudos_Python\DBT_mini_curso\dbt_project.yml> not found
+
+[0m00:07:43.380152 [debug] [MainThread]: Command `dbt debug` failed at 00:07:43.379952 after 1.15 seconds
+[0m00:07:43.380714 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:07:43.381305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ECF6B03E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ECF3D3AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023ECF32D6A0>]}
+[0m00:07:43.381740 [debug] [MainThread]: Flushing usage events
+[0m00:07:44.023019 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,11 @@
+cliente_id,nome,email,cidade,estado,data_cadastro,ativo
+1,Ana Lima,ana.lima@email.com,São Paulo,SP,2023-01-15,true
+2,Bruno Costa,bruno.costa@email.com,Rio de Janeiro,RJ,2023-02-20,true
+3,Carla Santos,carla.santos@email.com,Belo Horizonte,MG,2023-03-10,true
+4,Diego Ferreira,diego.ferreira@email.com,Curitiba,PR,2023-04-05,false
+5,Elena Martins,elena.martins@email.com,Porto Alegre,RS,2023-05-12,true
+6,Felipe Rocha,felipe.rocha@email.com,Salvador,BA,2023-06-18,true
+7,Gabriela Nunes,gabriela.nunes@email.com,Fortaleza,CE,2023-07-22,true
+8,Hugo Alves,hugo.alves@email.com,Manaus,AM,2023-08-30,false
+9,Isabela Pinto,isabela.pinto@email.com,Recife,PE,2023-09-14,true
+10,João Melo,joao.melo@email.com,Belém,PA,2023-10-01,true
