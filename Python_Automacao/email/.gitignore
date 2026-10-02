@@ -3,5 +3,10 @@
 
 # Editor
 .vscode/
-
+../.vscode/
+.anexos/
 .json/
+
+# Arquivos
+*.bin
+*.json
