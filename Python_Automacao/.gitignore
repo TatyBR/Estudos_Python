@@ -1,0 +1,12 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor
+.vscode/
+
+.anexos/
+.json/
+
+# Arquivos
+*.bin
+*.json
