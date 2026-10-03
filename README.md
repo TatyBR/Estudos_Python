@@ -25,7 +25,7 @@ Organizar e documentar minha jornada de aprendizado, mantendo exemplos práticos
 - `8.Analise Vendas/` → Criação de um DataFrame a partir da exportação de um arquivo csv e realização de tratamento dos dados, cálculos estatísticos e agregações e em alguma colunas.
 - `9.Visualizando Dados Gráficos/` → Conhecendo e testando vários tipos de gráficos utilizando como base os datasets da biblioteca Seaborn.
 
-🚀 `Express/` com: Exercícios da Trilha Python Expressa da plataforma Daxus (antiga Empowerdata).
+🚀 `Express/` com: Exercícios da Trilha Python Express da plataforma Daxus (antiga Empowerdata).
 
 🚀 `Projetos_Iniciantes/` com:
 - `Projeto01_Planilhas_Excel/` → Script que unifica varios arquivos excel em um só.
@@ -38,7 +38,7 @@ Organizar e documentar minha jornada de aprendizado, mantendo exemplos práticos
 - `Projeto08_Visao_Computacional/` → Script python para reconhecimento facial.
 - `Projeto09_Analise_Vendas_XSales/` → Tratamento e análises de uma base de dados fictícia de venda. 
 
-🚀 `Express/` com: Exercícios do módulo Automação de Tarefas com Python da plataforma Daxus (antiga Empowerdata). Estudos das bibliotecas:
+🚀 `Python_Automacao/` com: Exercícios do módulo Automação de Tarefas com Python da plataforma Daxus (antiga Empowerdata). Estudos das bibliotecas:
 - pypdf e pdfplumber (automação de pdfs).
 - openpyxl (automação arquivos excel).
 - imbox, msal e Microsoft Graph (automação com gmail e hotmail).
