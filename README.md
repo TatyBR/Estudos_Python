@@ -10,7 +10,9 @@ Organizar e documentar minha jornada de aprendizado, mantendo exemplos práticos
 
 
 ## 🧱 O que há até agora:
-📂 Pasta principal `Estudos_Python/` composta pelas subpastas `Exercicios/` e `Projetos_Iniciantes/`, onde:
+📂 Pasta principal `Estudos_Python/` composta pelas subpastas `DBT_mini_curso/`, `Exercicios/`, `Express/`, `Projetos_Iniciantes/`, `Python_Automacao/` e `Streamlit_teo_me_why/` onde:
+
+🚀 `DBT_mini_curso/` reprodução do mini curso de DBT do canal [Walter Gonzaga](https://www.youtube.com/watch?v=q1XTn-soSjc&list=PLnPMkGZK8QM_xKFykrOwt3A5vTpavw96S).
 
 🚀 `Exercicios/` possue vários exercícios que englobam alguns conceitos básicos:
 - `1.Conceitos_basicos` → Scripts abordandos conceitos básicos como print, criação de variáveis, cálculos com variáveis e condicionais.
@@ -23,15 +25,29 @@ Organizar e documentar minha jornada de aprendizado, mantendo exemplos práticos
 - `8.Analise Vendas/` → Criação de um DataFrame a partir da exportação de um arquivo csv e realização de tratamento dos dados, cálculos estatísticos e agregações e em alguma colunas.
 - `9.Visualizando Dados Gráficos/` → Conhecendo e testando vários tipos de gráficos utilizando como base os datasets da biblioteca Seaborn.
 
+🚀 `Express/` com: Exercícios da Trilha Python Expressa da plataforma Daxus (antiga Empowerdata).
+
 🚀 `Projetos_Iniciantes/` com:
 - `Projeto01_Planilhas_Excel/` → Script que unifica varios arquivos excel em um só.
-- `Projeto02_Analise_Vendas/` → Em construção....
+- `Projeto02_Analise_Vendas/` → Tratamento e análises de uma base de dados fictícia de venda. 
+- `Projeto03_Analise_Netflix/` → Tratamento e análises da base de dados disponibilizada pela Netflix através do Kaggle.
+- `Projeto04_Analise_Precos/` → Tratamento e análises de uma base fictícia de dados de preços de combustível. Confecção de alguns gráficos.
+- `Projeto05_Previsao_Prophet/` → Uso do modelo Prophet para realizar Análise Preditiva de Ações e prever o valor de ações na Bolsa de Valores. Uso do streamlit para visualização dos dados.
+- `Projeto06_Gerador_PDFs/` → Gerar PDF de acordo com um modelo pré determinado.
+- `Projeto07_Automacao/` → Automação de Tarefas: Acessando e enviando email automaticamente utilizando a biblioteca Pyautogui.
+- `Projeto08_Visao_Computacional/` → Script python para reconhecimento facial.
+- `Projeto09_Analise_Vendas_XSales/` → Tratamento e análises de uma base de dados fictícia de venda. 
 
+🚀 `Express/` com: Exercícios do módulo Automação de Tarefas com Python da plataforma Daxus (antiga Empowerdata). Estudos das bibliotecas:
+- pypdf e pdfplumber (automação de pdfs).
+- openpyxl (automação arquivos excel).
+- imbox, msal e Microsoft Graph (automação com gmail e hotmail).
 
+🚀 `Streamlit_teo_me_why/` reprodução do curso Streamlit Relâmpago do canal [Téo Me Why](https://www.youtube.com/watch?v=JLcEWe7woVk&list=PLvlkVRRKOYFRYA40hJ_V8e_iC5Lu6YPyn).
 
 ## 📌 Observações:
 
-✔️Este repositório é voltado para aprendizado pessoal.
+✔️Este repositório é voltado apenas para desenvolvimento pessoal.
 
 ✔️ Alguns exercícios podem ser simples, outros mais elaborados.
 
